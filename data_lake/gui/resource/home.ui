@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data_Lake</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>800</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QPushButton" name="dashboard">
+              <property name="text">
+               <string>DASHBOARD</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="data_source">
+              <property name="text">
+               <string>DATA SOURCES</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="schema_discovery">
+              <property name="text">
+               <string>SCHEMA DISCOVERY</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="schema_matching">
+              <property name="text">
+               <string>SCHEMA MATCHING</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="schema_summary">
+              <property name="text">
+               <string>SCHEMA SUMMARY</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="queries">
+              <property name="text">
+               <string>QUERIES</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="data_quality">
+              <property name="text">
+               <string>DATA QUALITY</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="about">
+              <property name="text">
+               <string>ABOUT</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="maximumSize">
+         <size>
+          <width>1000</width>
+          <height>800</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>995</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>data_source</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>212</x>
+     <y>737</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>schema_discovery</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>738</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dashboard</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>61</x>
+     <y>736</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>schema_matching</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>9</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>schema_summary</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>432</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>queries</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>500</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>534</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>data_quality</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>576</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>about</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_panel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>650</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>651</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_panel()</slot>
+ </slots>
+</ui>
